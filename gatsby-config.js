@@ -1,13 +1,15 @@
-require("dotenv").config()
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
-    siteTitle: "gatsby-starter-shopify",
-    siteTitleDefault: "gatsby-starter-shopify by @GatsbyJS",
-    siteUrl: "https://shopify-demo.gatsbyjs.com",
+    siteTitle: "lilmonkee",
+    siteTitleDefault: "Lilmonkee",
+    siteUrl: "https://lilmonkee.com",
     hrefLang: "en",
     siteDescription:
-      "A Gatsby starter using the latest Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
+      "Lilmonkee is a ecommerce application.",
     siteImage: "/default-og-image.jpg",
     twitter: "@gatsbyjs",
   },
